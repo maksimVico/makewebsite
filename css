@@ -1,0 +1,9 @@
+/* Dodajte plavi pravougaonik sa desne strane */
+.blue-rectangle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5cm; /* Širina plavog pravougaonika */
+    background-color: blue;
+}
