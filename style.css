@@ -1,4 +1,14 @@
-/* Dodajte stil za modalni prozor sa poluokruglim ivicama i plavom pozadinom */
+/* Stil za plavi pravougaonik sa desne strane */
+.blue-rectangle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5cm;
+    background-color: blue;
+}
+
+/* Stil za modalni prozor */
 .modal {
     display: none;
     position: fixed;
@@ -11,11 +21,11 @@
 }
 
 .modal-content {
-    background-color: blue; /* Plava pozadina */
+    background-color: blue;
     margin: 10% auto;
     padding: 20px;
-    border: none; /* Uklonite granicu */
-    border-radius: 20px; /* Poluokrugle ivice */
+    border: none;
+    border-radius: 20px;
     width: 50%;
     text-align: center;
 }
@@ -23,4 +33,28 @@
 .close {
     float: right;
     cursor: pointer;
+}
+
+/* Stil za pravougaonik za promenu oblika dugmadi */
+.shape-selector {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.shape-selector .circle,
+.shape-selector .square {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.square {
+    border-radius: 0;
 }

@@ -21,3 +21,20 @@ applyColorButton.addEventListener('click', () => {
         modal.style.display = 'none';
     }
 });
+
+// JavaScript za promenu oblika dugmadi
+const circleShape = document.getElementById('circleShape');
+const squareShape = document.getElementById('squareShape');
+const buttons = document.querySelectorAll('button'); // Selektujemo sva dugmad na stranici
+
+circleShape.addEventListener('click', () => {
+    buttons.forEach(button => {
+        button.style.borderRadius = '50%'; // Postavljamo okrugle dugmadi
+    });
+});
+
+squareShape.addEventListener('click', () => {
+    buttons.forEach(button => {
+        button.style.borderRadius = '0'; // Postavljamo normalne (kvadratne) dugmadi
+    });
+});
